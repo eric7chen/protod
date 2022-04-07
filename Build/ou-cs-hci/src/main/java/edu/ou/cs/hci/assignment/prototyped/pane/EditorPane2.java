@@ -509,17 +509,105 @@ public final class EditorPane2 extends AbstractPane
 		Pane	pane = new Pane();
 
 		// Example 1: Create and position a Label for the cTitle TextField
-		Label	lTitle = new Label("Title");
+		Label	lTitle = new Label("Title:");
+		Label	lDirector = new Label("Director:");
+		Label	lReviews = new Label("Reviews:");
+		Label	lRuntime = new Label("Runtime:");
+		Label	lYear = new Label("Year:");
+		Label	lRating = new Label("Rating:");
+		Label	lScore = new Label("Score:");
+		Label	lGenres = new Label("Genre(s):");
+		Label	lSummary = new Label("Summary:");
+		Label	lAwards = new Label("Awards:");
+		Label	lComments = new Label("Comments:");
 
 		lTitle.setFont(FONT_LABEL);
+		lDirector.setFont(FONT_LABEL);
+		lReviews.setFont(FONT_LABEL);
+		lRuntime.setFont(FONT_LABEL);
+		lYear.setFont(FONT_LABEL);
+		lRating.setFont(FONT_LABEL);
+		lScore.setFont(FONT_LABEL);
+		lGenres.setFont(FONT_LABEL);
+		lSummary.setFont(FONT_LABEL);
+		lAwards.setFont(FONT_LABEL);
+		lComments.setFont(FONT_LABEL);
+
 		lTitle.relocate(10, 10);
+		lDirector.relocate(10, 50);
+		lReviews.relocate(10, 90);
+		lRuntime.relocate(10, 130);
+		lYear.relocate(520, 10);
+		lRating.relocate(520, 50);
+		lScore.relocate(520, 90);
+		lGenres.relocate(520, 130);
+		lSummary.relocate(10, 170);
+		lAwards.relocate(10, 340);
+		lComments.relocate(10, 370);
+
+
 
 		// Example 2: Position the cTitle TextField itself
-		cTitle.relocate(10, 25);
-		cTitle.setPrefWidth(251);
+		cTitle.relocate(80, 10);
+		cTitle.setPrefWidth(420);
+
+		cDirector.relocate(80, 50);
+		cDirector.setPrefWidth(420);
+
+		cNumberOfReviews.relocate(80, 90);
+		cNumberOfReviews.setPrefWidth(100);
+
+		cIsColor.relocate(260, 80);
+		cIsAnimated.relocate(260, 100);
+
+		cRuntime.relocate(80, 130);
+		cRuntime.setPrefWidth(420);
+
+		cYear.relocate(590, 10);
+
+		cRating.relocate(590, 50);
+
+		cAverageReviewScore.relocate(590, 90);
+
+		double y = 130;
+		for (CheckBox c: cGenres) {
+			c.relocate(590, y);
+			y += 20;
+			pane.getChildren().add(c);
+		}
+
+		cSummary.relocate(10, 190);
+		cSummary.setPrefWidth(540);
+		cSummary.setPrefHeight(140);
+
+		cAwardPicture.relocate(90, 340);
+		cAwardCinematography.relocate(190, 340);
+		cAwardDirecting.relocate(340, 340);
+		cAwardActing.relocate(450, 340);
+
+		cComments.relocate(10, 390);
+		cComments.setPrefWidth(940);
+		cComments.setPrefHeight(100);
+
+		cImageView.relocate(730, 5);
+		cImageView.setFitHeight(330);
+		cImageView.setFitWidth(220);
+
+		cImageButton.relocate(730, 335);
+		cImageButton.setPrefWidth(220);
+
+		cImageFile.relocate(730, 360);
+		cImageFile.setPrefWidth(220);
+
 
 		// Add all of the widgets, labels, decoration nodes, etc. to the pane
-		pane.getChildren().addAll(lTitle, cTitle);
+		pane.getChildren().addAll(lTitle, cTitle, lDirector, cDirector,
+				lReviews, cNumberOfReviews,lRuntime, cRuntime, cIsColor,
+				cIsAnimated, lYear, lRating, lScore, lGenres, cYear, cRating,
+				cAverageReviewScore, lSummary, cSummary, lAwards,
+				cAwardActing, cAwardCinematography, cAwardDirecting,
+				cAwardPicture, lComments, cComments, cImageView, cImageButton
+				, cImageFile);
 
 		// Return the parent pane as the "root" of the EditorPane2 layout
 		return pane;

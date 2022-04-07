@@ -5,85 +5,84 @@
 
 /******************************************************************************/
 
-body
-{
-    font-family: 'Open Sans', sans-serif;
-    background-color: #ffffff;
-    font-family: Arial, sans-serif;
-    font-size: 12px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
+body {
+   font-family: "Open Sans", sans-serif;
+   background-color: #ffffff;
+   font-family: Arial, sans-serif;
+   font-size: 12px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   align-content: center;
+   width: 300px;
+   height: 320px;
+   margin: 0;
 }
 
 h2 {
-    display: flex;
-    justify-content: center;
+   display: flex;
+   justify-content: center;
 }
 
 p {
-    margin: 0;
+   margin: 0;
 }
 
 .about {
-    background-color: #ffffff;
-    /* border: 2px solid black; */
-    width: 300px;
-    height: 350px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+   background-color: #ffffff;
+   /* border: 2px solid black; */
+   width: 300px;
+   height: 320px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
 }
 
 #app_name {
-    font-size: 32px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
+   font-size: 32px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 0;
 }
 
 #tagline {
-    margin: 0;
-
+   margin: 0;
 }
 
 #app_team {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 #new_licensing {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 #new {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 #licensing {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 #download {
-    font-size: 16px;
+   font-size: 16px;
 }
 
 #team_name {
-    font-size: 16px;
-    text-decoration: none;
-    color: black;
+   font-size: 16px;
+   text-decoration: none;
+   color: black;
 }
-
-
 
 /******************************************************************************/
