@@ -1,0 +1,89 @@
+/******************************************************************************/
+
+/* TODO #2: Edit this file to style the elements in your page. There are many */
+/* CSS properties. See https://www.w3schools.com/css/ for reference and help. */
+
+/******************************************************************************/
+
+body
+{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    margin: 0;
+}
+
+.about {
+    background-color: #ffffff;
+    /* border: 2px solid black; */
+    width: 300px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#app_name {
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+#tagline {
+    margin: 0;
+
+}
+
+#app_team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#new_licensing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#new {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#licensing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#download {
+    font-size: 16px;
+}
+
+#team_name {
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/******************************************************************************/
